@@ -187,7 +187,7 @@ export async function generateMetadata({
 
   const title = post.seoTitle || post.title;
   const description = post.seoDescription || post.excerpt;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  const siteUrl = "https://sitepulse.jerryalex10000.workers.dev";
   const canonical =
     post.canonicalUrl || (siteUrl ? `${siteUrl}/${post.slug}` : undefined);
   const socialImage = post.seoImage || post.coverImage;
