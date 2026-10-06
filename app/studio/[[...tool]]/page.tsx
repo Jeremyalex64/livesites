@@ -1,7 +1,5 @@
-import StudioClient from "@/components/studio-client";
-
-export { metadata, viewport } from "next-sanity/studio";
+import { redirect } from "next/navigation";
 
 export default function StudioPage() {
-  return <StudioClient />;
+  redirect("https://rka0syp5.sanity.studio");
 }
