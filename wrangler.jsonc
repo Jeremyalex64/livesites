@@ -1,9 +1,33 @@
+// {
+//   "$schema": "./node_modules/wrangler/config-schema.json",
+//   "name": "sitepulse",
+//   "main": ".open-next/worker.js",
+//   "compatibility_date": "2026-10-06",
+//   "compatibility_flags": ["global_fetch_strictly_public"],
+//   "assets": {
+//     "directory": ".open-next/assets",
+//     "binding": "ASSETS",
+//   },
+//   "services": [
+//     {
+//       "binding": "WORKER_SELF_REFERENCE",
+//       "service": "sitepulse",
+//     },
+//   ],
+//   "vars": {
+//     "NEXT_PUBLIC_SANITY_PROJECT_ID": "rka0syp5",
+//     "NEXT_PUBLIC_SANITY_DATASET": "production",
+//   },
+//   "observability": {
+//     "enabled": true,
+//   },
+// }
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "sitepulse",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-06",
-  "compatibility_flags": ["global_fetch_strictly_public"],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",

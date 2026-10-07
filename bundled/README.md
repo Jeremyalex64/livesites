@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "sitepulse" generated at 2026-10-07T09:16:51.124Z.
